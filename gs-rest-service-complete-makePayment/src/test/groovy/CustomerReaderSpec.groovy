@@ -6,7 +6,7 @@ import spock.lang.Specification
 
 class CustomerReaderSpec extends Specification {
 
-	def "customer full name is formed from first name and last name"() {
+	public void "customer full name is formed from first name and last name"() {
 		given: "a customer with example name values"
 		Customer sampleCustomer = new Customer()
 		sampleCustomer.firstName ="Susan"
