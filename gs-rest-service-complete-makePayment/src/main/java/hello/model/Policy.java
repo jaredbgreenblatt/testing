@@ -1,4 +1,4 @@
-package model;
+package hello.model;
 
 import hello.EmailSender;
 
@@ -7,14 +7,19 @@ public class Policy {
 	private Customer customer;
 	private double balance;
 	
-	private final EmailSender es;
+	private  EmailSender es;
 	
+	public Policy() {
+		// TODO Auto-generated constructor stub
+	}
 	public Policy(final EmailSender es)
 	{
 		this.es = es; 
 	}
 	
-	private void makePayment(Payment payment) {
+	
+
+	public void makePayment(Payment payment) {
 		balance -= payment.getAmount();
 	
 		if (!isHasOutstandingBalance()) {

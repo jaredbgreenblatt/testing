@@ -35,3 +35,9 @@ http://semaphoreci.com/community/tutorials/stubbing-and-mocking-in-java-with-the
 SWAGGER 2.0
 https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
 Version Apis
+
+Install MONGO
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.9-signed.msi/download

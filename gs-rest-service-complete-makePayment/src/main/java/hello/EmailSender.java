@@ -1,6 +1,6 @@
 package hello;
 
-import model.Customer;
+import hello.model.Customer;
 
 public class EmailSender {
 	

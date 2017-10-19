@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/makePayment")
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
@@ -16,4 +17,7 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+    
+    @RequestMapping("{policyNumber}", method = RequestMethod.GET, produces ="application/json")
+    public @ResponseBody Policy getBalanceByPolicyNumber(@PathVariable ())
 }

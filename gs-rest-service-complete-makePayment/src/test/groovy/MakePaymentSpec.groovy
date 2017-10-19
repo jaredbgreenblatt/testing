@@ -1,8 +1,8 @@
 import hello.EmailSender
 import hello.PaymentNotifier
-import model.Customer
-import model.Payment
-import model.Policy
+import hello.model.Customer
+import hello.model.Payment
+import hello.model.Policy
 import spock.lang.Specification
 
 class MakePaymentSpec extends Specification {

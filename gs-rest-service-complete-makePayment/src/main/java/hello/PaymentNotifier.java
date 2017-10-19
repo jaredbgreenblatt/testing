@@ -1,6 +1,6 @@
 package hello;
 
-import model.Policy;
+import hello.model.Policy;
 
 public class PaymentNotifier {
 
