@@ -31,3 +31,7 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 Stubbing and Mocking in Java with the Spock Testing Framework
 
 http://semaphoreci.com/community/tutorials/stubbing-and-mocking-in-java-with-the-spock-testing-framework
+
+SWAGGER 2.0
+https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md
+Version Apis
