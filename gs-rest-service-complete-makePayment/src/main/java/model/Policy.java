@@ -1,12 +1,26 @@
 package model;
 
+import hello.EmailSender;
+
 public class Policy {
 	private String policyNumber;
 	private Customer customer;
 	private double balance;
 	
+	private final EmailSender es;
+	
+	public Policy(final EmailSender es)
+	{
+		this.es = es; 
+	}
+	
 	private void makePayment(Payment payment) {
 		balance -= payment.getAmount();
+	
+		if (!isHasOutstandingBalance()) {
+			
+			es.SendEmail(this.customer);
+		}
 	}
 	
 
