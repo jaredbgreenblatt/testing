@@ -1,9 +1,10 @@
+package hello
 import hello.Calculator
 import spock.lang.Specification
 
 class CalculatorSpec extends Specification {
-	
-	def "Add two numbers"(){
+
+	def"Add two numbers"(){
 
 		  given:"Two integers"
 		  int a=2
@@ -18,8 +19,8 @@ class CalculatorSpec extends Specification {
 		  then:"the sum is provided"
 		  sum == 6
 	}
-	
-	def "Add two string numbers"(){
+
+	def"Add two string numbers"(){
 		
 				  given:"Two string numbers"
 				  String a="2"
@@ -34,8 +35,8 @@ class CalculatorSpec extends Specification {
 				  then:"the sum is provided"
 				  sum == 6
 			}
-			
-			def "Add two string "(){
+
+	def"Add two string "(){
 				
 						  given:"Two string numbers"
 						  String a="a"
@@ -50,8 +51,8 @@ class CalculatorSpec extends Specification {
 						  then:"throw exception"
 						  thrown(NumberFormatException)
 					}
-   
-	def "Subtract two numbers"(){
+
+	def"Subtract two numbers"(){
 		  given:" Two integers"
 		  int a =2
 		  int b=4
@@ -65,8 +66,8 @@ class CalculatorSpec extends Specification {
 		  dif == -2
 		 
 	}
-   
-	def "Mutiply two numbers"(){
+
+	def"Mutiply two numbers"(){
 		  given: "two integers"
 		  int a =2
 		  int b =4
@@ -82,10 +83,9 @@ class CalculatorSpec extends Specification {
    
 		 
 	}
-   
-   
-   
-	def "Divide one number by another"() {
+
+	def"Divide one number by another"()
+	{
 		  given: "two integers"
 		  int a=4;
 		  int b=2;
@@ -96,8 +96,9 @@ class CalculatorSpec extends Specification {
 		  then: "the quotient is produced"
 		  quot == 2;
 	}
-   
-	def "divide by zero"() {
+
+	def"divide by zero"()
+	{
 		  given: "second int is zero"
 		  int a=4;
 		  int b=0;
@@ -110,8 +111,8 @@ class CalculatorSpec extends Specification {
 		 
 	}
 
-	
-	def "Divide one String number by another"() {
+	def"Divide one String number by another"()
+	{
 		given: "two Strings"
 		String a="4";
 		String b="2";
@@ -122,8 +123,9 @@ class CalculatorSpec extends Specification {
 		then: "the quotient is produced"
 		quot == 2;
   }
-  
-  def "divide One String Number by zero"() {
+
+	def"divide One String Number by zero"()
+	{
 	  given: "second int is zero"
 	  String a=4;
 	  String b=0;
